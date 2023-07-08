@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
+
+
+
+* {
+    margin:0;
+    padding:0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin:0;
+  padding:0;
+  font-family: Commissioner, sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+    text-decoration:none;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+    list-style:none;
+}
+
+.container {
+    max-inline-size: 1440px;
+    margin: auto;
+
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.navigation {
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    gap: 2rem;
+    background-color: #F94F4F;
+    padding: 4rem 2rem 4rem 6rem;
+    align-items: center;
+
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navigation li a {
+    color: white;
+
+}
+
+.navigation li:last-child {
+    padding:1rem 2.5rem;
+    background: black;
+
+}
+
+.navigation li:last-child:hover {
+    opacity:.6;
+}
+
+.header-content {
+    max-inline-size: 1440px;
+    margin: auto;
+    display: flex;
+    
+}
+
+.header-titles {
+    padding: 4rem 0;
+}
+
+.hero-image img {
+    width: 70rem;
+}
+
+.header-titles h1 {
+    font-size: 80px;
+    font-weight:800;
+    width: 40rem;
+    line-height:normal;
+    padding-bottom: 3rem;
+}
+
+.header-titles p {
+    width:37rem;
+    font-weight:400;
+    font-size:18px;
+}
+
+.header-content button {
+    padding:1rem 2.5rem;
+    background: #F94F4F;
+    border:none;
+    color: white;
+    margin-top: 3rem;
+    cursor:pointer;
+}
+
+.header-content button:hover {
+    opacity: .6;
+}
+
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.section-image img {
+    width: 85rem;
+}
+
+.right-part-section {
+    padding: 14rem 8rem;
+    background-color: #191921;
+    
+
+    & h2 span {
+        color: #F94F4F;
+        font-size: 56px;
+        
+    }
+
+    & h2 {
+        color: white;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 1;
+        padding-bottom: 3rem;
+        position: relative;
+
+        & img {
+            position: absolute;
+            left: -200px;
+            bottom: 60px;
+        }
+    }
+
+    & p {
+        
+        color: white;
+        padding-bottom: 3rem;
+        font-weight: 400;
+    }
+
+    & a {
+        color: #F94F4F;
+        border-bottom: 1px solid #F94F4F;
+        padding-bottom: 5px;
+    }
+
+}
+
+.section-brand {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+.titles-section h4 {
+   font-size:56px;
+   font-weight: 800;
+   line-height: 1;
+   position: relative;
+   left: 200px;
+   top: 200px;
+   z-index: 3
+   
+   
+   
+
+}
+
+.features {
+    background: #F94F4F;
+    position: relative;
+    top: -200px;
+    padding: 10rem 10rem 17rem 15rem;
+    color: white;
+
+    & feature {
+        padding-bottom: 10rem;
+        
+    }
+}
+
+.feature h5 {
+    font-size: 20px;
+    font-weight: 800;
+    position: relative;
+    left: -6rem;
+    
+
+    
+    
+
+    & span {
+        font-size: 80px;
+        font-weight: 800;
+        opacity: .2;
+        position: relative;
+        
+        
+        
+    }
+}
+
+.slide {
+    display: flex;
+    justify-content:space-between;
+}
+
+.slide-image img {
+    width: 55rem;
+}
+
+.slide-image {
+    position: relative;
+}
+
+.slide-image h2 {
+    position: absolute;
+    right:5rem;
+    bottom: 6rem;
+    color:white;
+    font-weight: 800;
+}
+
+.slide-image h5 {
+    position:absolute;
+    right: 5rem;
+    bottom: 4rem;
+    color: white;
+    font-weight: 300;
+}
+
+.left-part-slide {
+    position: relative;
+
+    & .arrows {
+        position: absolute;
+        color: #F94F4F;
+        display: flex;
+        gap: 2rem;
+        left:5rem;
+        top: 26rem;
+        z-index: 10;
+
+       & .next {
+        border-radius: 50%;
+        border: 1px solid #F94F4F;
+        padding: .3rem .8rem;
+        cursor: pointer;
+       } 
+        
+
+       & .prev {
+            border-radius: 50%;
+        border: 1px solid #F94F4F;
+        padding: .3rem .8rem;
+        cursor:pointer;
+        }
+    }
+}
+.left-part-slide h1 {
+    position: absolute;
+    color: white;
+    background: black;
+    top: 9rem;
+    font-size: 3rem;
+    padding: 5rem 28rem 5rem 4rem;
+    z-index: 4;
+    
+    line-height:1;
+
+    & img {
+        position: relative;
+        left: 26rem;
+        bottom: 5rem;
+    }
+    
+}
+
+.grid-layout-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    padding: 10rem 0;
+
+
+    & .footer-title {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        & h4 {
+            font-size: 3rem;
+            
+
+        }
+    }
+
+    & a {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        padding: .5rem 1.7rem;
+        background: #F94F4F;
+        color: white;
+    }
+}
+
+    
+
